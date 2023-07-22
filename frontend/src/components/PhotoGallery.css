@@ -1,0 +1,8 @@
+.image-gallery-content .image-gallery-slide .image-gallery-image {
+  margin-top: 1rem;
+  display: flexbox;
+  justify-content: center;
+  align-content: center;
+  width: 50%;
+  box-shadow: 1px 5px 5px 10px rgba(255, 255, 255, 0.4);
+}

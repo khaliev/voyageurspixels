@@ -34,6 +34,10 @@ const ItemManager = require("./ItemManager");
 models.item = new ItemManager();
 models.item.setDatabase(pool);
 
+const ShotManager = require("./ShotManager");
+
+models.shots = new ShotManager();
+models.shots.setDatabase(pool);
 // bonus: use a proxy to personalize error message,
 // when asking for a non existing model
 
