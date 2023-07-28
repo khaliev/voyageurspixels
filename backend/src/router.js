@@ -14,4 +14,8 @@ router.delete("/items/:id", itemControllers.destroy);
 
 router.get("/shots", shotControllers.getAllShots);
 
+router.post("/shots", shotControllers.AddShots);
+
+router.delete("/shots/:id", shotControllers.destroyShots);
+
 module.exports = router;

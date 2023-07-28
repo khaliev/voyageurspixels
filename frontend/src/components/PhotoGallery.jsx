@@ -15,7 +15,7 @@ export default function PhotoGallery() {
 
   useEffect(() => {
     fetch(
-      `${import.meta.env.VITE_BACKEND_URL ?? "http://localhost:8000"}/shots`
+      `${import.meta.env.VITE_BACKEND_URL ?? "http://localhost:5000"}/shots`
     )
       .then((response) => response.json())
       .then((data) => setImages(data));
@@ -23,8 +23,6 @@ export default function PhotoGallery() {
 
   return (
     <div className="Photogallery">
-      <h1>Photos</h1>
-      <h2>Select some shots</h2>
       <ImageGallery
         className="gallery"
         items={images}

@@ -2,7 +2,9 @@ CREATE TABLE shots (
     id INTEGER PRIMARY KEY AUTO_INCREMENT,
     originalTitle TEXT,
     original TEXT,
-    thumbnail TEXT
+    thumbnail TEXT,
+    src TEXT,
+    alt TEXT
 );
 
 INSERT INTO Shots (originalTitle, original, thumbnail) VALUES 
@@ -14,6 +16,9 @@ INSERT INTO Shots (originalTitle, original, thumbnail) VALUES
 ('Reims street', 'https://unsplash.com/photos/QvYb-l8fBWg/download?ixid=M3wxMjA3fDB8MXxhbGx8ODN8fHx8fHwyfHwxNjg5OTk5NDM2fA&force=true&w=1920', 'https://live.staticflickr.com/65535/53062964230_377130cc60_o_d.jpg'),
 ('Sky', 'https://unsplash.com/photos/lD3tPh9o7Hc/download?ixid=M3wxMjA3fDB8MXxhbGx8ODJ8fHx8fHwyfHwxNjg5ODU3NTEyfA&force=true&w=1920', 'https://live.staticflickr.com/65535/53061034763_d5367e6e96_o_d.jpg');
 
+UPDATE shots SET
+    src=original,
+    alt=originalTitle;
 
 CREATE TABLE Styles (
     id INTEGER PRIMARY KEY AUTO_INCREMENT,

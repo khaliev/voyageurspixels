@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Navbar() {
   return (
     <nav className="NavbarItems">
@@ -5,9 +7,15 @@ function Navbar() {
         <h1>Voyageur's Pixels</h1>
       </div>
       <ul className="navbarMenu">
-        <li>Home</li>
-        <li>Gallery</li>
-        <li>About</li>
+        <Link to="/">
+          <li>Home</li>
+        </Link>
+        <Link to="/grid">
+          <li>Gallery</li>
+        </Link>
+        <Link to="/admin">
+          <li>Admin</li>
+        </Link>
       </ul>
     </nav>
   );

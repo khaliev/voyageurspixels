@@ -5,15 +5,19 @@ class ShotManager extends AbstractManager {
     super({ table: "shots" });
   }
 
-  insert(shot) {
-    return this.database.query(
-      `insert into ${this.table} (title, url_shot) values (?, ?)`,
-      [shot.title]
-    );
+  findAll() {
+    return this.database.query(`SELECT * FROM ${this.table}`);
   }
 
-  findAll() {
-    return this.database.query(`select * from  ${this.table}`);
+  delete(id) {
+    return this.database.query(`delete from ${this.table} where id = ?`, [id]);
+  }
+
+  addshots(shot) {
+    return this.database.query(
+      "INSERT INTO shots (originalTitle, original, thumbnail) VALUES (?, ?, ?)",
+      [shot.originalTitle, shot.original, shot.thumbnail]
+    );
   }
 }
 

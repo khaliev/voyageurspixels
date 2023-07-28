@@ -116,12 +116,11 @@ button {
   .NavbarItems {
     flex-direction: column;
     height: auto;
-    padding: 0.2rem;    
+    padding: 0.2rem;
   }
   .navbarMenu {
     flex-direction: row;
     margin-right: 0;
-    
   }
 }
 
@@ -144,6 +143,4 @@ button {
   }
 }
 
-
 /* NAVBAR RESPONSIVE */
-
