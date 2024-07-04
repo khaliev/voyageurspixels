@@ -4,7 +4,7 @@ function Navbar() {
   return (
     <nav className="NavbarItems">
       <div className="navbarLogo">
-        <h1>Voyageur's Pixels</h1>
+        <h1>Voyageurs Pixels</h1>
       </div>
       <ul className="navbarMenu">
         <Link to="/">
