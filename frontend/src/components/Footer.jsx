@@ -2,7 +2,7 @@ function Footer() {
   return (
     <div className="footer">
       <div className="top">
-        <h1>© Voyageur's Pixels</h1>
+        <h1>© Voyageurs Pixels</h1>
         <span className="socialmedia">
           <a href="/">
             <i className="fa-brands fa-facebook-square" />
