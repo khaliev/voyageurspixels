@@ -8,10 +8,10 @@ function Navbar() {
       </div>
       <ul className="navbarMenu">
         <Link to="/">
-          <li>Home</li>
+          <li>Start</li>
         </Link>
         <Link to="/grid">
-          <li>Gallery</li>
+          <li>My Gallery</li>
         </Link>
         <Link to="/admin">
           <li>Admin</li>
